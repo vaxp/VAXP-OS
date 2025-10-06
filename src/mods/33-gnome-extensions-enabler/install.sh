@@ -58,7 +58,6 @@ ALL_EXTENSIONS=(
     'quick-settings-tweaks@qwreey'
     'compiz-alike-magic-lamp-effect@hermes83.github.com'
     'network-stats@gnome.noroadsleft.xyz'
-    'openweather-extension@penguin-teal.github.io'
     'switcher@anduinos'
     'noti-bottom-right@anduinos'
     'loc@anduinos.com'
