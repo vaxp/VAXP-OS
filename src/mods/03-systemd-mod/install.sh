@@ -3,9 +3,8 @@ set -o pipefail         # exit on pipeline error
 set -u                  # treat unset variable as error
 
 # we need to install systemd first, to configure machine id
-print_ok "Installing systemd"
+print_ok "Installing essential systemd components for Noble (24.04 LTS)"
 
-# Don't wait for network, because wget is not available
 #wait_network
 apt update
 apt install $INTERACTIVE \
@@ -16,11 +15,10 @@ apt install $INTERACTIVE \
     publicsuffix \
     libnss-systemd \
     networkd-dispatcher \
-    systemd-cryptsetup \
-    linux-sysctl-defaults \
+    cryptsetup \
     shared-mime-info \
     dmsetup \
     xdg-user-dirs \
     ca-certificates \
     --no-install-recommends
-judge "Install systemd"
+judge "Install systemd components"
