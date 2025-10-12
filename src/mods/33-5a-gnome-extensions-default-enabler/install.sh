@@ -21,13 +21,10 @@ print_ok "Applying permanent default extension activation via GSettings override
 
 # 1. قائمة بجميع الـ IDs (نستخدم القائمة التي استخدمتها بالضبط لتجنب الأخطاء)
 ALL_EXTENSIONS=(
-    'arcmenu@arcmenu.com'
     'blur-my-shell@aunetx'
     'ProxySwitcher@flannaghan.com'
-    'customize-ibus@hollowman.ml'
-    'openbar@neuromorph'
-    'tasks-in-panel@fthx'
     'quick-settings-tweaks@qwreey'
+    'dash-to-dock@micxgx.gmail.com'
     'compiz-alike-magic-lamp-effect@hermes83.github.com'
     'network-stats@gnome.noroadsleft.xyz'
     'switcher@anduinos'
@@ -35,7 +32,6 @@ ALL_EXTENSIONS=(
     'loc@anduinos.com'
     'lockkeys@vaina.lt'
     'tiling-assistant@leleat-on-github'
-    'mediacontrols@cliffniff.github.com'
     'clipboard-indicator@tudmotu.com'
 )
 

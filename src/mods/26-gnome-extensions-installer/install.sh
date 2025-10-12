@@ -52,19 +52,14 @@ install_extension() {
 }
 
 extensions=(
-    "arcmenu@arcmenu.com"
     "blur-my-shell@aunetx"
     "ProxySwitcher@flannaghan.com"
-    "customize-ibus@hollowman.ml"
-    "openbar@neuromorph"
-    "tasks-in-panel@fthx"
     "quick-settings-tweaks@qwreey"
+    "dash-to-dock@micxgx.gmail.com"
     "compiz-alike-magic-lamp-effect@hermes83.github.com"
     "network-stats@gnome.noroadsleft.xyz"
-    "openweather-extension@penguin-teal.github.io"
     "lockkeys@vaina.lt"
     "tiling-assistant@leleat-on-github"
-    "mediacontrols@cliffniff.github.com"
     "clipboard-indicator@tudmotu.com"
 )
 

@@ -3,22 +3,17 @@ set -o pipefail         # exit on pipeline error
 set -u                  # treat unset variable as error
 
 print_ok "Enabling gnome extensions for root..."
-/root/.local/bin/gext -F enable arcmenu@arcmenu.com
 /root/.local/bin/gext -F enable blur-my-shell@aunetx
 /root/.local/bin/gext -F enable ProxySwitcher@flannaghan.com
-/root/.local/bin/gext -F enable customize-ibus@hollowman.ml
-/root/.local/bin/gext -F enable openbar@neuromorph
-/root/.local/bin/gext -F enable tasks-in-panel@fthx
+/root/.local/bin/gext -F enable dash-to-dock@micxgx.gmail.com
 /root/.local/bin/gext -F enable quick-settings-tweaks@qwreey
 /root/.local/bin/gext -F enable compiz-alike-magic-lamp-effect@hermes83.github.com
 /root/.local/bin/gext -F enable network-stats@gnome.noroadsleft.xyz
-/root/.local/bin/gext -F enable openweather-extension@penguin-teal.github.io
 /root/.local/bin/gext -F enable switcher@anduinos
 /root/.local/bin/gext -F enable noti-bottom-right@anduinos
 /root/.local/bin/gext -F enable loc@anduinos.com
 /root/.local/bin/gext -F enable lockkeys@vaina.lt
 /root/.local/bin/gext -F enable tiling-assistant@leleat-on-github
-/root/.local/bin/gext -F enable mediacontrols@cliffniff.github.com
 /root/.local/bin/gext -F enable clipboard-indicator@tudmotu.com
 judge "Enable gnome extensions"
 
@@ -49,13 +44,10 @@ print_ok "Applying permanent default extension activation via GSettings override
 
 # 1. قائمة بجميع الـ IDs (القائمة التي استخدمتها بالفعل)
 ALL_EXTENSIONS=(
-    'arcmenu@arcmenu.com'
     'blur-my-shell@aunetx'
     'ProxySwitcher@flannaghan.com'
-    'customize-ibus@hollowman.ml'
-    'openbar@neuromorph'
-    'tasks-in-panel@fthx'
     'quick-settings-tweaks@qwreey'
+    'dash-to-dock@micxgx.gmail.com'
     'compiz-alike-magic-lamp-effect@hermes83.github.com'
     'network-stats@gnome.noroadsleft.xyz'
     'switcher@anduinos'
@@ -63,7 +55,6 @@ ALL_EXTENSIONS=(
     'loc@anduinos.com'
     'lockkeys@vaina.lt'
     'tiling-assistant@leleat-on-github'
-    'mediacontrols@cliffniff.github.com'
     'clipboard-indicator@tudmotu.com'
 )
 
