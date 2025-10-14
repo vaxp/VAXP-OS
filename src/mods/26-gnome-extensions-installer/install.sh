@@ -52,6 +52,15 @@ install_extension() {
 }
 
 extensions=(
+    "appindicatorsupport@rgcjonas.gmail.com"
+    "blur-my-shell@aunetx"
+    "dash-to-dock@micxgx.gmail.com"
+    "desktop-cube@schneegans.github.com"
+    "CoverflowAltTab@palatis.blogspot.com"
+    "gsconnect@andyholmes.github.io"
+    "just-perfection-desktop@just-perfection"
+    "Rounded_Corners@lennart-k"
+    "rounded-window-corners@fxgn"
     "blur-my-shell@aunetx"
     "ProxySwitcher@flannaghan.com"
     "quick-settings-tweaks@qwreey"

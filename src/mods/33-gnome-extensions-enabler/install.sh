@@ -5,6 +5,15 @@ set -u                  # treat unset variable as error
 print_ok "Enabling gnome extensions for root..."
 /root/.local/bin/gext -F enable blur-my-shell@aunetx
 /root/.local/bin/gext -F enable ProxySwitcher@flannaghan.com
+/root/.local/bin/gext -F enable appindicatorsupport@rgcjonas.gmail.com
+/root/.local/bin/gext -F enable blur-my-shell@aunetx
+/root/.local/bin/gext -F enable dash-to-dock@micxgx.gmail.com
+/root/.local/bin/gext -F enable desktop-cube@schneegans.github.com
+/root/.local/bin/gext -F enable CoverflowAltTab@palatis.blogspot.com
+/root/.local/bin/gext -F enable gsconnect@andyholmes.github.io
+/root/.local/bin/gext -F enable just-perfection-desktop@just-perfection
+/root/.local/bin/gext -F enable Rounded_Corners@lennart-k
+/root/.local/bin/gext -F enable rounded-window-corners@fxgn
 /root/.local/bin/gext -F enable dash-to-dock@micxgx.gmail.com
 /root/.local/bin/gext -F enable quick-settings-tweaks@qwreey
 /root/.local/bin/gext -F enable compiz-alike-magic-lamp-effect@hermes83.github.com
