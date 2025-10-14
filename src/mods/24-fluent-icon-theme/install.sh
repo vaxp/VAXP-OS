@@ -2,26 +2,36 @@ set -e                  # exit on error
 set -o pipefail         # exit on pipeline error
 set -u                  # treat unset variable as error
 
-print_ok "Downloading Fluent icon theme"
+
+# ==============================================
+# تثبيت ثيم أيقونات Nordzy
+# ==============================================
+
+print_ok "Cloning Nordzy Icon theme repository"
 mkdir -p ./themes/
-wget https://git.aiursoft.cn/PublicVault/Fluent-icon-theme/archive/master.zip -O ./themes/fluent-icon-theme.zip
-unzip -q -O UTF-8 ./themes/fluent-icon-theme.zip -d ./themes/
-judge "Download Fluent icon theme"
+# نستخدم مجلد فرعي مؤقت لعملية الاستنساخ/التثبيت
+git clone https://github.com/MolassesLover/Nordzy-icon.git ./themes/Nordzy-icon
+judge "Clone Nordzy Icon repository"
 
-print_ok "Installing Fluent icon theme"
+print_ok "Installing Nordzy Icon theme (default)"
 (
-    print_ok "Installing Fluent icon theme" && \
-    cd ./themes/fluent-icon-theme/ && \
-    ./install.sh standard
+    cd ./themes/Nordzy-icon && \
+    # الخيار -t default: لتعيين الثيم الافتراضي، -c: لتعيين الألوان، -p: لتثبيت الثيم
+    ./install.sh -t default -c -p
 )
-judge "Install Fluent icon theme"
+judge "Install Nordzy Icon theme"
 
-#==============================================
+# ==============================================
+# تثبيت ثيم مؤشر Sunity Cursors
+# ==============================================
 
-print_ok "Installing Fluent cursor theme"
+print_ok "Cloning Sunity Cursors repository"
+git clone https://github.com/alvatip/sunity-cursors.git ./themes/sunity-cursors
+judge "Clone Sunity Cursors repository"
+
+print_ok "Installing Sunity Cursors theme"
 (
-    print_ok "Installing Fluent cursor theme" && \
-    cd ./themes/fluent-icon-theme/cursors/ && \
+    cd ./themes/sunity-cursors && \
     ./install.sh
 )
-judge "Install Fluent cursor theme"
+judge "Install Sunity Cursors theme"

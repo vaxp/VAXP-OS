@@ -10,9 +10,9 @@ const DARK_SCHEME_NAME    = 'prefer-dark';
 const LIGHT_THEME_SETTINGS = {
     "org.gnome.desktop.interface": {
         "color-scheme": LIGHT_SCHEME_NAME,
-        "cursor-theme": "Fluent-dark-cursors",
+        "cursor-theme": "Sunity-cursors",
         "gtk-theme": "Fluent-round-Light",
-        "icon-theme": "Fluent-light",
+        "icon-theme": "Nordzy--dark_panel",
     },
     "org.gnome.shell.extensions.user-theme": {
         "name": "Fluent-round-Light",
@@ -22,9 +22,9 @@ const LIGHT_THEME_SETTINGS = {
 const DARK_THEME_SETTINGS = {
     "org.gnome.desktop.interface": {
         "color-scheme": DARK_SCHEME_NAME,
-        "cursor-theme": "Fluent-dark-cursors",
+        "cursor-theme": "Sunity-cursors",
         "gtk-theme": "Fluent-round-Dark",
-        "icon-theme": "Fluent-dark",
+        "icon-theme": "Nordzy--dark_panel",
     },
     "org.gnome.shell.extensions.user-theme": {
         "name": "Fluent-round-Dark",

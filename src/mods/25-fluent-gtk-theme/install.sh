@@ -10,7 +10,6 @@ judge "Download Fluent theme"
 
 (
     cd ./themes/fluent-gtk-theme/ && \
-    ./install.sh --tweaks noborder round --theme all 
+    ./install.sh --tweaks noborder round
 )
-
 judge "Install Fluent theme"
